@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Portfolio — Rajan Iyer · March 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1a18;
+    --ink-2: #3d3d38;
+    --ink-3: #7a7a72;
+    --ink-4: #b0afa8;
+    --paper: #faf9f6;
+    --paper-2: #f2f0eb;
+    --paper-3: #e8e5de;
+    --gold: #c8903a;
+    --gold-light: #f0d9b0;
+    --gold-pale: #fdf6ea;
+    --green: #2d6a4f;
+    --green-light: #d8f3dc;
+    --red: #9b2226;
+    --red-light: #fde8e8;
+    --blue: #1b4f72;
+    --blue-light: #dbeafe;
+    --border: #e0ddd6;
+    --shadow: 0 1px 3px rgba(26,26,24,0.08), 0 4px 16px rgba(26,26,24,0.04);
+    --shadow-md: 0 4px 12px rgba(26,26,24,0.10), 0 12px 32px rgba(26,26,24,0.06);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── PRINT BAND ── */
+  .print-band {
+    background: var(--ink);
+    color: var(--paper-2);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ── WRAPPER ── */
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ── HERO IDENTITY ── */
+  .hero {
+    padding: 48px 0 36px;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+  }
+
+  .hero-month {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .hero-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .hero-role {
+    font-size: 15px;
+    color: var(--ink-2);
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  .hero-org {
+    font-size: 13px;
+    color: var(--ink-3);
+  }
+
+  .hero-uid {
+    text-align: right;
+  }
+
+  .uid-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-4);
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  .uid-value {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--gold);
+    font-weight: 500;
+    background: var(--gold-pale);
+    border: 1px solid var(--gold-light);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  .uid-tenure {
+    font-size: 11px;
+    color: var(--ink-4);
+    margin-top: 6px;
+    text-align: right;
+  }
+
+  /* ── SIGNAL ── */
+  .signal-wrap {
+    margin: 36px 0 0;
+    padding: 28px 32px;
+    background: var(--ink);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .signal-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--gold);
+  }
+
+  .signal-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--ink-4);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .signal-sentence {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(18px, 3vw, 24px);
+    color: var(--paper);
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .signal-sentence em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .signal-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .pill-gold { background: var(--gold); color: #fff; }
+  .pill-outline { background: transparent; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.7); }
+
+  /* ── SECTION HEADERS ── */
+  .section {
+    margin-top: 48px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-4);
+    letter-spacing: 0.08em;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: var(--ink);
+  }
+
+  .section-q {
+    font-size: 13px;
+    color: var(--ink-3);
+    margin-left: auto;
+    font-style: italic;
+  }
+
+  /* ── NARRATIVE ── */
+  .narrative {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--ink-2);
+    margin-bottom: 24px;
+    padding-left: 16px;
+    border-left: 2px solid var(--gold-light);
+  }
+
+  /* ── STATS ROW ── */
+  .stats-row {
+    display: grid;
+    gap: 12px;
+  }
+
+  .stats-2 { grid-template-columns: 1fr 1fr; }
+  .stats-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .stats-4 { grid-template-columns: repeat(4, 1fr); }
+
+  .stat-card {
+    background: var(--paper-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--ink-3);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .stat-value {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-sub {
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+
+  .stat-good { border-top: 2px solid var(--green); }
+  .stat-warn { border-top: 2px solid var(--gold); }
+  .stat-bad  { border-top: 2px solid var(--red); }
+
+  /* ── PROGRESS BARS ── */
+  .axis-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .axis-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 44px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .axis-name {
+    font-size: 13px;
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+
+  .axis-bar-wrap {
+    position: relative;
+    height: 8px;
+    background: var(--paper-3);
+    border-radius: 4px;
+    overflow: visible;
+  }
+
+  .axis-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease;
+  }
+
+  .axis-bar-green { background: var(--green); }
+  .axis-bar-gold  { background: var(--gold); }
+  .axis-bar-red   { background: var(--red); }
+
+  .axis-threshold {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 2px;
+    background: var(--ink-3);
+    left: 60%;
+    border-radius: 1px;
+  }
+
+  .axis-threshold::after {
+    content: 'threshold';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    color: var(--ink-4);
+    white-space: nowrap;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .axis-score {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-2);
+    text-align: right;
+    font-weight: 500;
+  }
+
+  .axis-score.below { color: var(--red); }
+
+  /* ── IP COMMITS ── */
+  .ip-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .ip-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 12px 14px;
+    background: var(--paper-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  .ip-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .ip-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-4);
+    margin-top: 4px;
+  }
+
+  /* ── KPI TABLE ── */
+  .kpi-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 16px;
+  }
+
+  .kpi-table th {
+    text-align: left;
+    font-size: 11px;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0 12px 10px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .kpi-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink-2);
+    vertical-align: middle;
+  }
+
+  .kpi-table tr:last-child td { border-bottom: none; }
+
+  .kpi-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  .kpi-hit  { background: var(--green-light); color: var(--green); }
+  .kpi-miss { background: var(--red-light); color: var(--red); }
+  .kpi-partial { background: var(--gold-pale); color: var(--gold); }
+
+  .kpi-bar-cell { width: 120px; }
+  .kpi-mini-bar { height: 4px; background: var(--paper-3); border-radius: 2px; }
+  .kpi-mini-fill { height: 100%; border-radius: 2px; }
+
+  .unverified-note {
+    font-size: 10px;
+    color: var(--ink-4);
+    font-family: 'DM Mono', monospace;
+    margin-left: 4px;
+  }
+
+  /* ── CONSTRAINTS ── */
+  .constraint-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .constraint-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .constraint-item {
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--paper-2);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .constraint-item.open { border-left: 3px solid var(--red); }
+  .constraint-item.resolved { border-left: 3px solid var(--green); }
+
+  .constraint-text { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+  .constraint-type {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    color: var(--ink-4);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+  }
+
+  .constraint-status {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .status-resolved { background: var(--green-light); color: var(--green); }
+  .status-open { background: var(--red-light); color: var(--red); }
+
+  /* ── CAREER TRAJECTORY ── */
+  .runway {
+    margin: 20px 0;
+    position: relative;
+    padding: 24px 0 8px;
+  }
+
+  .runway-line {
+    height: 3px;
+    background: var(--paper-3);
+    border-radius: 2px;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .runway-progress {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    background: var(--gold);
+    border-radius: 2px;
+    width: 35%;
+  }
+
+  .runway-nodes {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .runway-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .node-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: var(--paper);
+    position: relative;
+    z-index: 2;
+  }
+
+  .node-dot.achieved { background: var(--gold); border-color: var(--gold); }
+  .node-dot.current  { background: var(--ink); border-color: var(--ink); box-shadow: 0 0 0 3px rgba(26,26,24,0.15); }
+  .node-dot.projected { background: var(--paper); border-color: var(--gold); border-style: dashed; }
+  .node-dot.future { background: var(--paper); border-color: var(--paper-3); }
+
+  .node-label {
+    font-family: 'DM Serif Display', serif;
+    font-size: 15px;
+    color: var(--ink);
+  }
+
+  .node-label.dim { color: var(--ink-4); }
+
+  .node-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-4);
+    text-align: center;
+  }
+
+  .node-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-weight: 500;
+  }
+
+  .tag-done   { background: var(--gold-pale); color: var(--gold); }
+  .tag-now    { background: var(--ink); color: var(--paper); }
+  .tag-proj   { background: var(--green-light); color: var(--green); }
+
+  .gap-flags {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .gap-flag {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    color: var(--ink-2);
+    padding: 10px 14px;
+    background: var(--red-light);
+    border-radius: 6px;
+    border: 1px solid rgba(155,34,38,0.15);
+  }
+
+  .gap-flag::before {
+    content: '↑';
+    font-size: 14px;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  /* ── FOOTER ── */
+  .portfolio-footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    font-size: 12px;
+    color: var(--ink-4);
+    line-height: 1.6;
+  }
+
+  .footer-uid {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .footer-right {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-4);
+    text-align: right;
+  }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  /* ── COLLAPSE ── */
+  .collapsible { cursor: pointer; user-select: none; }
+  .collapsible .toggle-icon {
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--ink-4);
+    transition: transform 0.2s;
+  }
+  .collapsible.open .toggle-icon { transform: rotate(180deg); }
+  .collapse-body { display: none; }
+  .collapse-body.open { display: block; }
+
+  /* ── DELIVERABLE CHIPS ── */
+  .deliverable-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .chip {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    border: 1px solid var(--border);
+  }
+
+  .chip-delivered { background: var(--green-light); color: var(--green); border-color: transparent; }
+  .chip-pending   { background: var(--gold-pale); color: var(--gold); border-color: transparent; }
+  .chip-progress  { background: var(--blue-light); color: var(--blue); border-color: transparent; }
+  .chip-waiting   { background: var(--paper-3); color: var(--ink-3); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .section { animation: fadeUp 0.5s ease both; }
+  .section:nth-child(1) { animation-delay: 0.1s; }
+  .section:nth-child(2) { animation-delay: 0.15s; }
+  .section:nth-child(3) { animation-delay: 0.2s; }
+  .section:nth-child(4) { animation-delay: 0.25s; }
+  .section:nth-child(5) { animation-delay: 0.3s; }
+  .section:nth-child(6) { animation-delay: 0.35s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .stats-3, .stats-4 { grid-template-columns: 1fr 1fr; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-uid { text-align: left; }
+    .axis-row { grid-template-columns: 100px 1fr 40px; }
+    .constraint-summary { grid-template-columns: 1fr 1fr; }
+    .runway-nodes { gap: 8px; }
+    .node-label { font-size: 13px; }
+  }
+
+  @media print {
+    .print-band { display: none; }
+    .collapse-body { display: block !important; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PRINT BAND -->
+<div class="print-band">
+  <span>PDGMS · Leadership Portfolio</span>
+  <span>PDGMS-EMP-00512 · March 2026 · Vayura Lifesciences</span>
+  <span>Generated 02 Apr 2026</span>
+</div>
+
+<div class="page">
+
+  <!-- HERO IDENTITY -->
+  <div class="hero section">
+    <div>
+      <div class="hero-month">Leadership Portfolio · March 2026</div>
+      <h1 class="hero-name">Rajan Iyer</h1>
+      <div class="hero-role">Production Planning Lead — Sterile Injectables</div>
+      <div class="hero-org">Vayura Lifesciences · Facility 3 Commercialization</div>
+    </div>
+    <div class="hero-uid">
+      <div class="uid-label">Permanent ID</div>
+      <div class="uid-value">PDGMS-EMP-00512</div>
+      <div class="uid-tenure">19 months tenure · V2</div>
+    </div>
+  </div>
+
+  <!-- SIGNAL -->
+  <div class="signal-wrap section">
+    <div class="signal-label">This month at a glance</div>
+    <div class="signal-sentence">
+      <em>Strongest month</em> since joining — score jumped from 64 to 71.
+      Delivered 16 of 20 assigned work items. Growing in 4 of 6 areas.
+      Tracking <em>3 months ahead</em> of V3 plan.
+    </div>
+    <div class="signal-pills">
+      <span class="pill pill-gold">Composite 71 / 100</span>
+      <span class="pill pill-outline">V2 · Ahead of plan</span>
+      <span class="pill pill-outline">19 months at Vayura</span>
+    </div>
+  </div>
+
+  <!-- SECTION 1 — CONTRIBUTION HIGHLIGHTS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">What I Shipped</h2>
+      <span class="section-q">What did I contribute this month?</span>
+    </div>
+
+    <p class="narrative">
+      Rajan shipped 16 of 20 deliverables — his highest completion rate since the Facility 3 program launched. The process validation protocol was the critical win: it had been cycling between regulatory affairs and QA since December, and Rajan broke the logjam by organizing a joint review session with both teams instead of sequential sign-offs. He created 7 original work items this month, including the deviation investigation SOP that the Head of Quality has now mandated as the standard across all three manufacturing facilities.
+    </p>
+
+    <div class="stats-row stats-4">
+      <div class="stat-card stat-good">
+        <div class="stat-label">Completed</div>
+        <div class="stat-value">16</div>
+        <div class="stat-sub">of 20 assigned</div>
+      </div>
+      <div class="stat-card stat-warn">
+        <div class="stat-label">In Review</div>
+        <div class="stat-value">1</div>
+        <div class="stat-sub">awaiting QA sign-off</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">In Progress</div>
+        <div class="stat-value">2</div>
+        <div class="stat-sub">carry to April</div>
+      </div>
+      <div class="stat-card stat-good">
+        <div class="stat-label">Original Work</div>
+        <div class="stat-value">7</div>
+        <div class="stat-sub">knowledge contributions</div>
+      </div>
+    </div>
+
+    <!-- Deliverable status chips -->
+    <div style="margin-top: 16px;">
+      <div class="stat-label" style="margin-bottom: 8px;">Delivery breakdown</div>
+      <div class="deliverable-chips">
+        <span class="chip chip-delivered">✓ Process validation protocol</span>
+        <span class="chip chip-delivered">✓ Batch record template</span>
+        <span class="chip chip-delivered">✓ Deviation investigation SOP</span>
+        <span class="chip chip-delivered">✓ Equipment qualification matrix</span>
+        <span class="chip chip-delivered">✓ IQ/OQ — autoclave unit 3</span>
+        <span class="chip chip-delivered">✓ IQ/OQ — vial washing machine</span>
+        <span class="chip chip-delivered">✓ PQ — lyophilizer cycle</span>
+        <span class="chip chip-delivered">✓ EM trend analysis (6 months)</span>
+        <span class="chip chip-delivered">✓ Cleanroom 3B investigation</span>
+        <span class="chip chip-delivered">✓ Vendor qual — raw materials</span>
+        <span class="chip chip-delivered">✓ Vendor qual — packaging</span>
+        <span class="chip chip-delivered">✓ Yield optimization report</span>
+        <span class="chip chip-delivered">✓ Operator training ×4 batches</span>
+        <span class="chip chip-pending">⏳ Compressed air DQ/IQ</span>
+        <span class="chip chip-progress">→ Media fill protocol</span>
+        <span class="chip chip-progress">→ Stability study protocol</span>
+        <span class="chip chip-waiting">· Facility 3 readiness assessment</span>
+      </div>
+    </div>
+
+    <!-- IP Commits (collapsible) -->
+    <div style="margin-top: 24px;">
+      <div class="section-header collapsible" id="ip-toggle" onclick="toggleSection('ip-body', 'ip-toggle')">
+        <span class="section-num">↳</span>
+        <span style="font-size: 14px; font-weight: 500; color: var(--ink-2);">7 Original Work contributions this month</span>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="collapse-body open" id="ip-body">
+        <div class="ip-list">
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Process validation protocol — lyophilized injectable line (3 product families, 12 SKUs)
+              <div class="ip-date">05 Mar 2026</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Batch record template — sterile fill-finish operations with in-process control checkpoints
+              <div class="ip-date">09 Mar 2026</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Deviation investigation SOP — root cause analysis workflow for OOS results in sterile manufacturing
+              <div class="ip-date">14 Mar 2026</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Equipment qualification matrix — IQ/OQ/PQ status tracker for 14 critical equipment items
+              <div class="ip-date">18 Mar 2026</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Environmental monitoring trend analysis — 6-month particulate and viable data for Grade A/B cleanrooms
+              <div class="ip-date">22 Mar 2026</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Vendor qualification checklist — raw material and primary packaging supplier audit framework
+              <div class="ip-date">26 Mar 2026</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot"></div>
+            <div>
+              Yield optimization report — identified 8% fill-weight variance in vial line 2, proposed nozzle recalibration
+              <div class="ip-date">29 Mar 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 — CAPABILITY GROWTH -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">How I'm Growing</h2>
+      <span class="section-q">Where am I developing?</span>
+    </div>
+
+    <p class="narrative">
+      Delivery (80) and engagement (85) are Rajan's strongest areas — he ships consistently and participates in every organizational ritual. Original work (74) has been climbing steadily since he started creating reusable SOPs and templates that other teams adopt. The gap is in structured thinking (52, below the 60 threshold) and process adoption (58). Rajan tends to solve production problems through direct technical troubleshooting rather than applying structured diagnostic frameworks — effective for immediate fixes, but it means root causes sometimes recur. This is the main growth area for V3 readiness.
+    </p>
+
+    <div class="axis-grid" style="position: relative;">
+      <!-- threshold label only on first bar -->
+      <div class="axis-row" style="position: relative;">
+        <span class="axis-name">Delivery</span>
+        <div class="axis-bar-wrap">
+          <div class="axis-bar axis-bar-green" style="width: 80%;"></div>
+          <div class="axis-threshold"></div>
+        </div>
+        <span class="axis-score">80</span>
+      </div>
+      <div class="axis-row">
+        <span class="axis-name">Original Work</span>
+        <div class="axis-bar-wrap">
+          <div class="axis-bar axis-bar-green" style="width: 74%;"></div>
+          <div class="axis-threshold" style="border-top: none;"></div>
+        </div>
+        <span class="axis-score">74</span>
+      </div>
+      <div class="axis-row">
+        <span class="axis-name">KPI Impact</span>
+        <div class="axis-bar-wrap">
+          <div class="axis-bar axis-bar-green" style="width: 68%;"></div>
+          <div class="axis-threshold" style="border-top: none;"></div>
+        </div>
+        <span class="axis-score">68</span>
+      </div>
+      <div class="axis-row">
+        <span class="axis-name">Engagement</span>
+        <div class="axis-bar-wrap">
+          <div class="axis-bar axis-bar-green" style="width: 85%;"></div>
+          <div class="axis-threshold" style="border-top: none;"></div>
+        </div>
+        <span class="axis-score">85</span>
+      </div>
+      <div class="axis-row">
+        <span class="axis-name">Process Adoption</span>
+        <div class="axis-bar-wrap">
+          <div class="axis-bar axis-bar-gold" style="width: 58%;"></div>
+          <div class="axis-threshold" style="border-top: none;"></div>
+        </div>
+        <span class="axis-score below">58</span>
+      </div>
+      <div class="axis-row">
+        <span class="axis-name">Structured Thinking</span>
+        <div class="axis-bar-wrap">
+          <div class="axis-bar axis-bar-red" style="width: 52%;"></div>
+          <div class="axis-threshold" style="border-top: none;"></div>
+        </div>
+        <span class="axis-score below">52</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 12px; font-size: 11px; color: var(--ink-4); font-family: 'DM Mono', monospace;">
+      ▎ Vertical line = V3 eligibility threshold (60). Scores below threshold shown in red.
+    </div>
+
+    <!-- Framework detail (collapsible) -->
+    <div style="margin-top: 20px;">
+      <div class="section-header collapsible" id="fw-toggle" onclick="toggleSection('fw-body', 'fw-toggle')">
+        <span class="section-num">↳</span>
+        <span style="font-size: 14px; font-weight: 500; color: var(--ink-2);">Structured thinking — frameworks applied</span>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="collapse-body open" id="fw-body">
+        <div class="ip-list">
+          <div class="ip-item">
+            <div class="ip-dot" style="background: var(--blue);"></div>
+            <div>
+              <strong>First Principles Thinking</strong> × 3 — Applied during HEPA filter investigation to isolate the failing filter before vendor confirmation
+              <div class="ip-date">Verified</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot" style="background: var(--blue);"></div>
+            <div>
+              <strong>PDCA Cycle</strong> × 2 — Used in operator training iteration (Plan → Do → Check → Act between batches 1 and 2)
+              <div class="ip-date">Verified</div>
+            </div>
+          </div>
+          <div class="ip-item">
+            <div class="ip-dot" style="background: var(--blue);"></div>
+            <div>
+              <strong>5 Why Analysis</strong> × 1 — Applied to vial line 2 fill-weight variance; traced 8% variance to nozzle wear, not operator technique
+              <div class="ip-date">Verified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 — KPI IMPACT -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Target Performance</h2>
+      <span class="section-q">Did I hit my targets?</span>
+    </div>
+
+    <p class="narrative">
+      Hit 3 of 5 targets. Equipment qualifications (10 vs 8 target) and SOP approvals (7 vs 5) both overperformed — Rajan front-loaded qualification work to clear the path for commercial batches in Q2. Batch success rate came in at 88% vs 92% target due to a particulate excursion in Cleanroom 3B. Deviation closure rate (78% vs 90%) remains the biggest miss: 4 deviations from January are still open pending results from the contract testing lab.
+    </p>
+
+    <table class="kpi-table">
+      <thead>
+        <tr>
+          <th>Target</th>
+          <th>Goal</th>
+          <th>Actual</th>
+          <th style="width: 120px;">Progress</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equipment Qualifications</td>
+          <td>8 items</td>
+          <td><strong>10</strong></td>
+          <td class="kpi-bar-cell">
+            <div class="kpi-mini-bar"><div class="kpi-mini-fill" style="width: 100%; background: var(--green);"></div></div>
+          </td>
+          <td><span class="kpi-badge kpi-hit">Hit</span></td>
+        </tr>
+        <tr>
+          <td>SOPs Drafted &amp; Approved</td>
+          <td>5 documents</td>
+          <td><strong>7</strong></td>
+          <td class="kpi-bar-cell">
+            <div class="kpi-mini-bar"><div class="kpi-mini-fill" style="width: 100%; background: var(--green);"></div></div>
+          </td>
+          <td><span class="kpi-badge kpi-hit">Hit</span></td>
+        </tr>
+        <tr>
+          <td>Operator Training Batches</td>
+          <td>4 batches</td>
+          <td><strong>4</strong></td>
+          <td class="kpi-bar-cell">
+            <div class="kpi-mini-bar"><div class="kpi-mini-fill" style="width: 100%; background: var(--green);"></div></div>
+          </td>
+          <td>
+            <span class="kpi-badge kpi-hit">Hit</span>
+            <span class="unverified-note">unverified</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Batch Success Rate</td>
+          <td>92%</td>
+          <td><strong>88%</strong></td>
+          <td class="kpi-bar-cell">
+            <div class="kpi-mini-bar"><div class="kpi-mini-fill" style="width: 88%; background: var(--gold);"></div></div>
+          </td>
+          <td><span class="kpi-badge kpi-miss">Miss</span></td>
+        </tr>
+        <tr>
+          <td>Deviation Closure Rate</td>
+          <td>90%</td>
+          <td><strong>78%</strong></td>
+          <td class="kpi-bar-cell">
+            <div class="kpi-mini-bar"><div class="kpi-mini-fill" style="width: 78%; background: var(--red);"></div></div>
+          </td>
+          <td>
+            <span class="kpi-badge kpi-miss">Miss</span>
+            <span class="unverified-note">unverified</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top: 12px; font-size: 11px; color: var(--ink-4); font-family: 'DM Mono', monospace;">
+      3 of 5 targets verified by TPM · 2 pending official confirmation
+    </div>
+  </div>
+
+  <!-- SECTION 4 — CONSTRAINTS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">What Got in the Way</h2>
+      <span class="section-q">What blocked me, and how did I respond?</span>
+    </div>
+
+    <p class="narrative">
+      8 blockers raised, 5 resolved (63% resolution rate). Two patterns dominate: external dependencies (contract lab turnaround, vendor lead times) and approval bottlenecks. The HEPA filter delay was the costliest — 2 failed batches before root cause was confirmed, all because replacement filters had a 6-week lead time with no safety stock. Rajan resolved the regulatory review bottleneck by switching to joint review sessions — saving 3 weeks per protocol going forward. The second shift supervisor vacancy is the most persistent open issue.
+    </p>
+
+    <div class="constraint-summary">
+      <div class="stat-card stat-warn">
+        <div class="stat-label">Raised</div>
+        <div class="stat-value">8</div>
+        <div class="stat-sub">this month</div>
+      </div>
+      <div class="stat-card stat-good">
+        <div class="stat-label">Resolved</div>
+        <div class="stat-value">5</div>
+        <div class="stat-sub">closed out</div>
+      </div>
+      <div class="stat-card stat-bad">
+        <div class="stat-label">Still Open</div>
+        <div class="stat-value">3</div>
+        <div class="stat-sub">carrying to April</div>
+      </div>
+    </div>
+
+    <!-- Blocker type breakdown -->
+    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+      <span class="chip" style="background: var(--paper-2);">Approval delays × 2</span>
+      <span class="chip" style="background: var(--paper-2);">Missing assumptions × 2</span>
+      <span class="chip" style="background: var(--paper-2);">Internal support × 2</span>
+      <span class="chip" style="background: var(--paper-2);">Budget × 1</span>
+      <span class="chip" style="background: var(--paper-2);">Talent × 1</span>
+    </div>
+
+    <div class="constraint-list">
+      <div class="constraint-item resolved">
+        <div>
+          <div class="constraint-text">HEPA filter replacement for Cleanroom 3B delayed — vendor lead time 6 weeks, 2 batches failed during wait</div>
+          <div class="constraint-type">Missing assumption · CST-0421</div>
+        </div>
+        <span class="constraint-status status-resolved">Resolved 19 Mar</span>
+      </div>
+      <div class="constraint-item resolved">
+        <div>
+          <div class="constraint-text">Regulatory affairs sequential review cycle adding 3 weeks to every protocol approval — switched to joint review</div>
+          <div class="constraint-type">Approval delay · CST-0433</div>
+        </div>
+        <span class="constraint-status status-resolved">Resolved 05 Mar</span>
+      </div>
+      <div class="constraint-item resolved">
+        <div>
+          <div class="constraint-text">Compressed air system assumed qualified — discovered DQ/IQ incomplete during batch review</div>
+          <div class="constraint-type">Missing assumption · CST-0445</div>
+        </div>
+        <span class="constraint-status status-resolved">Resolved 24 Mar</span>
+      </div>
+      <div class="constraint-item open">
+        <div>
+          <div class="constraint-text">Contract testing lab turnaround — 4 open deviations waiting 18+ days for root cause results</div>
+          <div class="constraint-type">Internal support · CST-0428</div>
+        </div>
+        <span class="constraint-status status-open">Open</span>
+      </div>
+      <div class="constraint-item open">
+        <div>
+          <div class="constraint-text">Second shift supervisor vacancy — production planning limited to single shift since February</div>
+          <div class="constraint-type">Talent gap · CST-0439</div>
+        </div>
+        <span class="constraint-status status-open">Open</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 — CAREER TRAJECTORY -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Where I'm Headed</h2>
+      <span class="section-q">Am I on track for the next level?</span>
+    </div>
+
+    <p class="narrative">
+      Tracking ahead of plan for V3 (Program Lead) — projected February 2027, nearly 3 months ahead of the planned May 2027 target. Delivery and original work scores already exceed V3 thresholds — unusual for someone 5 months into V2. Two gaps remain: structured thinking (52) and process adoption (58) both below the 60 minimum. Consistently applying and documenting structured frameworks over the next 3–4 months will close both gaps and unlock eligibility ahead of schedule.
+    </p>
+
+    <!-- Career runway -->
+    <div class="runway">
+      <div class="runway-nodes">
+        <div class="runway-node">
+          <div class="node-dot achieved"></div>
+          <div class="node-label">V1</div>
+          <div class="node-date">Aug 2024</div>
+          <span class="node-tag tag-done">Done</span>
+        </div>
+        <div class="runway-node">
+          <div class="node-dot achieved"></div>
+          <div class="node-label">V2</div>
+          <div class="node-date">Nov 2025</div>
+          <span class="node-tag tag-done">Done</span>
+        </div>
+        <div class="runway-node">
+          <div class="node-dot current"></div>
+          <div class="node-label">Now</div>
+          <div class="node-date">Mar 2026</div>
+          <span class="node-tag tag-now">Score 71</span>
+        </div>
+        <div class="runway-node">
+          <div class="node-dot projected"></div>
+          <div class="node-label">V3</div>
+          <div class="node-date">Feb 2027 ↑</div>
+          <span class="node-tag tag-proj">3mo early</span>
+        </div>
+        <div class="runway-node">
+          <div class="node-dot future"></div>
+          <div class="node-label dim">V4</div>
+          <div class="node-date">Aug 2030</div>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="runway-line">
+        <div class="runway-progress"></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 4px; margin-bottom: 16px; font-size: 11px; color: var(--ink-4); font-family: 'DM Mono', monospace;">
+      ○ dashed node = projected. ● filled = achieved. Current composite score: 71/100
+    </div>
+
+    <div style="font-size: 13px; font-weight: 500; color: var(--ink-2); margin-bottom: 10px;">To close V3 gap:</div>
+    <div class="gap-flags">
+      <div class="gap-flag">Structured thinking score (52) needs to reach 60 — apply and document frameworks in daily troubleshooting</div>
+      <div class="gap-flag">Process adoption score (58) needs to reach 60 — consistent documentation of process usage in daily reports</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="portfolio-footer section">
+    <div class="footer-left">
+      <div>Leadership Portfolio · Rajan Iyer · March 2026</div>
+      <div>Vayura Lifesciences · Facility 3 Commercialization</div>
+      <div style="margin-top: 4px;" class="footer-uid">PDGMS-EMP-00512</div>
+    </div>
+    <div class="footer-right">
+      <div>Generated by PDGMS</div>
+      <div>02 April 2026, 09:14 IST</div>
+      <div style="margin-top: 6px; color: var(--ink-4);">PF-2026-03-00512</div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+  function toggleSection(bodyId, toggleId) {
+    const body = document.getElementById(bodyId);
+    const toggle = document.getElementById(toggleId);
+    body.classList.toggle('open');
+    toggle.classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
